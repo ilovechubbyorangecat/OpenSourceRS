@@ -1,0 +1,5 @@
+game.Players.PlayerAdded:Connect(function(player)
+    player.Chatted:Connect(function(message)
+        print(player.Name .. " said: " .. message)
+    end)
+end)
